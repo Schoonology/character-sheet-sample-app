@@ -1,0 +1,15 @@
+# Ignore bundler config.
+#
+.bundle
+
+# Ignore specific environment files.
+#
+.env.*
+
+# Ignore local databases.
+#
+database/*.db*
+
+# Ignore tmp files.
+#
+tmp

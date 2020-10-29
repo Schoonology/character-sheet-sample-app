@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .title }}</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Character Sheet</h1>
+  <div class="stats">
+    <div class="stat">
+      <label for="stat--strength">Str</label>
+      <input name="strength" value="10"/>
+      <button id="btnStrength">Roll</button>
+    </div>
+    <div class="stat">
+      <label for="stat--dexterity">Dex</label>
+      <input name="dexterity" value="10"/>
+      <button id="btnDexterity">Roll</button>
+    </div>
+    <div class="stat">
+      <label for="stat--constitution">Con</label>
+      <input name="constitution" value="10"/>
+      <button id="btnConstitution">Roll</button>
+    </div>
+    <div class="stat">
+      <label for="stat--intelligence">Int</label>
+      <input name="intelligence" value="10"/>
+      <button id="btnIntelligence">Roll</button>
+    </div>
+    <div class="stat">
+      <label for="stat--wisdom">Wis</label>
+      <input name="wisdom" value="10"/>
+      <button id="btnWisdom">Roll</button>
+    </div>
+    <div class="stat">
+      <label for="stat--charisma">Cha</label>
+      <input name="charisma" value="10"/>
+      <button id="btnCharisma">Roll</button>
+    </div>
+  </div>
+  <div id="result">
+    <h2>Result</h2>
+    <div class="value"></div>
+    <button>Close</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

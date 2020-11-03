@@ -3,11 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.6.2"
 
-gem "pakyow", "~> 1.0.6", require: "pakyow/all"
-
-# Easily manage environment variables.
-#
 gem "dotenv"
+gem "httparty"
+
+git "https://github.com/pakyow/pakyow.git", glob: "**/*.gemspec" do
+  gem "pakyow-core"
+  gem "pakyow-support"
+  gem "pakyow-routing"
+end
 
 group :development do
   # Speed up project boot time.

@@ -1,4 +1,4 @@
 .PHONY: start
 
 start:
-	pakyow prototype
+	bundle exec pakyow boot
